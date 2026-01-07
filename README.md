@@ -1199,3 +1199,6 @@ Configure the firewall to accept connections on port 4242:
 Verify that everything is configured correctly by checking the status of the firewall:
 
 # sudo ufw status
+
+My commands
+getent group | awk -F: '$4 != ""'
