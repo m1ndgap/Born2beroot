@@ -1109,6 +1109,22 @@ Defaults  log_input
 Defaults  log_output
 Defaults  requiretty
 
+/ What secure_path does
+
+secure_path defines the PATH environment variable that sudo uses when running commands.
+
+PATH is the list of directories the shell searches to find commands.
+
+Example: If you type ls, the shell looks in /usr/bin, /bin, etc. to find ls.
+
+When you run a command with sudo, the shell may use a restricted PATH. This ensures sudo runs programs from safe directories only, and prevents malicious binaries from being executed accidentally.
+
+3️⃣ Why add :/snap/bin
+
+Some applications installed via Snap put their executables in /snap/bin.
+
+Without adding this, trying to run a snap command via sudo may fail:
+
 go to the line where there is root	ALL=(ALL:ALL) ALL
 put bellow it <username>	ALL=(ALL:ALL) ALL
 
