@@ -1,3 +1,7 @@
+*based on [ricardoferreirax](https://github.com/ricardoferreirax) [repo](https://github.com/ricardoferreirax/BORN_2_BE_ROOT)*
+
+- [Commands](#custom-anchor)
+
 ### 1) What is a Virtual Machine (VM)?
 
 Answer:
@@ -555,9 +559,10 @@ Login prompt appears
 
 Answer:
 
+```
 df -h
 du -sh
-
+```
 
 These commands show filesystem and directory usage.
 
@@ -698,10 +703,11 @@ A PID (Process ID) is a unique number assigned to each running process.
 
 Answer:
 
+```
 ps aux
 top
 htop
-
+```
 
 These commands display process activity.
 
@@ -720,8 +726,10 @@ SIGKILL → force termination
 
 Answer:
 
+```
 kill PID
 kill -9 PID
+```
 
 
 -9 forces termination if the process does not respond.
@@ -814,6 +822,8 @@ How an OS boots and runs internally
 
 This project built a strong foundation for working with real servers.
 
+<a id="custom-anchor"></a>
+# Commands
 
 Open a terminal and run the command:
 
